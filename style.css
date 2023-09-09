@@ -32,3 +32,18 @@
 #footer{
     grid-area: ft;
 }
+@media(max-width:500px)
+    {
+        .container{
+            grid-template-rows: 30px 1fr 1fr 30px;
+            grid-template-columns: 1fr;
+
+            grid-gap: 2px;
+
+            grid-template-areas: 
+            "hd "
+            "side"
+            "main"
+            "ft";
+        }
+    }
